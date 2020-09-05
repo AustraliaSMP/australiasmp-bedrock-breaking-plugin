@@ -22,6 +22,8 @@ import org.bukkit.inventory.meta.Damageable;
 
 public final class PacketListener extends PacketAdapter {
   private final Map<Player, Integer> players = new HashMap<>();
+
+  // determines how long it takes to break bedrock
   final int ticksPerStage = Math.round(100 / 9);
 
   public PacketListener(final BedrockBreakingPlugin plugin) {
